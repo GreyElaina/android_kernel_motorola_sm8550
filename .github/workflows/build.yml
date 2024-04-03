@@ -25,7 +25,7 @@ jobs:
         arch: arm64
         compiler: clang/15/binutils
         defconfig: gki_defconfig
-        image: Image.gz-dtb
+        image: Image.gz
     
     - uses: actions/upload-artifact@v4
       with: 
