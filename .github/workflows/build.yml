@@ -22,7 +22,10 @@ jobs:
         defconfig: gki_defconfig
         image: Image.gz
 
+    - name: Setup Debug Session
+      uses: csexton/debugger-action@master
+
     - uses: actions/upload-artifact@v4
       with: 
         name: Image.gz
-        path: "/github/workspace/out/arch/arm64/boot/Image.gz"
+        path: ${{ steps.build.outputs.outfile }}
