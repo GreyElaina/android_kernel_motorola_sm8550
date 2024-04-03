@@ -23,7 +23,7 @@ jobs:
         NAME: TestBuild
       with:
         arch: arm64
-        compiler: aosp-clang/master/clang-r487747c
+        compiler: aosp-clang/master/clang-r416183b
         defconfig: gki_defconfig
         image: Image.gz-dtb
     
