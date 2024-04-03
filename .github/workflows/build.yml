@@ -27,11 +27,7 @@ jobs:
         defconfig: gki_defconfig
         image: Image.gz-dtb
     
-    - name: Setup Debug Session
-      if: always()
-      uses: csexton/debugger-action@master
-
     - uses: actions/upload-artifact@v4
       with: 
-        name: Image.gz-dtb
+        name: Image.gz
         path: ${{ steps.build.outputs.outfile }}
