@@ -17,6 +17,7 @@ jobs:
       uses: GreyElaina/android-kernel-actions@master
       id: build
       env:
+        SCCACHE_GHA_ENABLED: "true"
         NAME: TestBuild
       with:
         arch: arm64
