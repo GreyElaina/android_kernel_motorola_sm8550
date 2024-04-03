@@ -20,8 +20,8 @@ jobs:
         compiler: clang/15/binutils
         defconfig: gki_defconfig
         image: Image.gz
-    
+
     - uses: actions/upload-artifact@v4
       with: 
-        name: "/github/workspace/out/arch/arm64/boot/Image.gz"
-        path: ${{ steps.build.outputs.outfile }}
+        name: "Image.gz"
+        path: "/github/workspace/out/arch/arm64/boot/Image.gz"
