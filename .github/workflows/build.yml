@@ -17,7 +17,7 @@ jobs:
         path: zipper
 
     - name: Android kernel build
-      uses: lemniskett/android-kernel-actions@master
+      uses: GreyElaina/android-kernel-actions@master
       id: build
       env:
         NAME: TestBuild
